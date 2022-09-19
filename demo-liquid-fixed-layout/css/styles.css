@@ -1,0 +1,30 @@
+header{
+    background-color: blueviolet;
+}
+nav{
+    background-color: brown;
+}
+main{
+    background-color: burlywood;
+}
+.banner{
+    background-color: darkorange;
+}
+li{
+    background-color: deepskyblue;
+    width: calc((100% - 32px) / 3);
+}
+footer{
+    background-color: greenyellow;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.promo{
+    display: flex;
+    justify-content: space-between;
+}
+html{
+    text-align: center;
+}
