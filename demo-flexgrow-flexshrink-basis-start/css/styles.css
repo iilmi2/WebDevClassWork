@@ -1,0 +1,85 @@
+/* Colour Palette
+
+Red    #e24c3b
+White  #fbf3ef
+Blue   #0088e0
+
+*/
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-image: url(../img/pole-closeup-mobile.webp);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: 'Arvo', serif;
+}
+nav svg{
+  width: 5rem;
+}
+header{
+  background-color: white;
+}
+nav li:first-of-type, nav li:last-of-type{
+  background-color: red;
+}
+nav li:nth-of-type(3){
+  background-color: cyan;
+}
+
+nav li{
+  padding: 1rem;
+}
+section{
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+  border: 1px;
+  border-radius: 6px;
+  padding: 1rem;
+}
+main{
+  color: white;
+  padding: 1rem;
+}
+/* Desktop Layout */
+@media(min-width: 925px){
+  body{
+    background-image: url(../img/pole-closeup.webp);
+  }
+  header ul{
+    display: flex;
+  }
+  nav li:first-of-type{
+    flex-grow: 1;
+  }
+
+  nav li:first-of-type, nav li:last-of-type{
+    background-color: unset;
+  }
+  nav li:nth-of-type(3){
+    background-color: unset;
+  }
+  nav ul{
+    align-items: center;
+  }
+  header{
+    background-color: rgba(0, 0, 0, 0.5);
+    
+  }
+  nav li:first-of-type{
+    order: 3;
+  }
+  nav li:nth-of-type(2n+3){
+    order: 5;
+  }
+}
