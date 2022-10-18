@@ -1,0 +1,74 @@
+/* developer styles go here */
+header img{
+    width: 64px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav ul{
+    list-style-type: none;
+    
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.125rem;
+    padding: 1rem;
+    border-left: 4px solid rgba(0, 0,0, 0);
+}
+
+nav li:not(:first-of-type) a:hover{
+    border-left: 4px solid #f7d874;
+}
+nav ul ul {
+    padding-left: 0;
+}
+nav ul ul a{
+    padding-left: 3rem;
+}
+nav {
+    background-color: blue;
+}
+nav ul ul{
+    background-color: red;
+}
+@media(min-width: 600px){
+    nav > ul{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    nav ul ul{
+        display: none;
+        position: absolute;
+        text-align: left;
+    }
+    nav li:hover > ul{
+        display: block;
+    }
+    nav li{
+        flex-grow: 1;
+        position: relative;
+    }
+    nav a{
+        border: none;
+    }
+    nav li:not(:first-of-type) a:hover{
+        border: none;
+    }
+    nav ul ul a{
+        padding: 1rem;
+    }
+    nav ul ul ul{
+        left: 100%;
+        top: 0%;
+    }
+
+    
+}
+@media(minwidth:750px){
+    nav a{
+        white-space: nowrap;
+
+    }
+}
