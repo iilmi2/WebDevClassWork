@@ -1,0 +1,83 @@
+/* 
+    Variables 
+
+    We can store all sorts of values in CSS custom properties, including things that are a little long, things that aren't easy to remember, or things that we might want to change throughout our entire website later.
+
+    Remember to declare your variables in the :root of the document, else other elements may not be able to acces them (i.e. use the correct scope)!
+*/
+
+/* Typography */
+
+
+/* Utility Classes */
+:root{
+    --nunito: 2rem/1.5 'Nunito', sans-serif;
+    --open-sans: 1rem/1.2 'Open Sans', sans-serif;
+    --black: #212121;
+    --red: #c0232a;
+    --box-shadow: 0 0 10px 0 rgb(33 33 33 / 15%);
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inner-container {
+    max-width: 960px;
+    margin: auto;
+    padding: 0.5rem;
+}
+body{
+    font: var(--open-sans);
+}
+h1, h2, h3{
+    font: var(--nunito);
+    text-transform: uppercase;
+}
+.intro{
+    text-align: center;
+    max-width: 80ch;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+.intro p{
+    font-size: 1.2rem;
+}
+.inner-container section{
+    box-shadow: var(--box-shadow);
+    margin: 1rem 0.5rem;
+    border-radius: 5px;
+}
+picture + div{
+    padding: 1rem;
+}
+img{
+    border-radius: 5px 5px 0 0;
+}
+h3{
+    font-size: 1.2rem;
+}
+/* Navigation */
+
+
+/* Main Content */
+
+
+/* Footer */
+
+
+/* Media Query */
+@media screen and (min-width: 720px) {
+    .wide-flex {
+        align-items: center;
+        display: flex;
+    }
+    section section{
+        align-items: center;
+        display: flex;
+    }
+    picture{
+        flex-shrink: 0;
+    }
+}
