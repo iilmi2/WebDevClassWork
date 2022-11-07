@@ -1,0 +1,96 @@
+/* CSS Variables - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+
+:root {
+	--blue: #6593A6;
+	--grey: #58595B;
+	--yellow: #F2CF63;
+	--orange: #F2C063;
+	--white: #F2F2F2;
+	--dk-blue: #0d1238;
+	--lg-blue: #272f70;
+	--dk-green: #374d12;
+	--lg-green: #54761b;
+}
+body{
+    background-image: url(../img/oriental-tiles.png);
+    color: var(--white);
+    font-family: sans-serif;
+}
+form{
+    background-color: var(--white);
+    color: var(--dk-blue);
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+section{
+    background-color: rgba(13, 18, 56, 0.7);
+    padding: 1rem;
+}
+h2{
+    font-size: 3rem;
+    font-family: serif;
+}
+form > p{
+    background-color: #54761b;
+    color: var(--white);
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px 5px 0 0;
+}
+.flex-container{
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+.flex-container div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+input{
+    border-radius: 5px;
+    border: 1px solid #a2adb7;
+    background-color: #edeff0;
+    padding: 0.5rem;
+}
+input[type=submit]{
+    width: 100%;
+    background-color: var(--lg-blue);
+    color: var(--white);
+     margin-bottom: 1rem;
+}
+input[type=submit]:hover{
+    background-color: var(--dk-blue);
+    cursor: pointer;
+   
+}
+form a {
+    color: var(--lg-green);
+    text-decoration: none;
+}
+form a:hover{
+    color: var(--dk-green);
+}
+
+@media(min-width: 700px){
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .flex-container div{
+        flex-basis: 49%;
+    }
+
+}
+
+@media(min-width: 1000px){
+    section{
+        display: flex;
+        align-items: flex-start;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    form{
+        flex-shrink: 0;
+        flex-basis: 650px;
+    }
+}
