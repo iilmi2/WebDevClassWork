@@ -45,7 +45,7 @@ form > p{
     flex-direction: column;
     margin-bottom: 1rem;
 }
-input{
+input, select{
     border-radius: 5px;
     border: 1px solid #a2adb7;
     background-color: #edeff0;
@@ -69,6 +69,27 @@ form a {
 form a:hover{
     color: var(--dk-green);
 }
+.radio-group div{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+    align-items: center;
+    flex-basis: 49%;
+
+}
+.flex-container .radio-group{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.radio-group p{
+    width: 100%;
+    font-weight: bold;
+}
+
+
 
 @media(min-width: 700px){
     .flex-container{
@@ -78,6 +99,14 @@ form a:hover{
     }
     .flex-container div{
         flex-basis: 49%;
+    }
+    .flex-container .radio-group{
+        flex-basis: 100%;
+    }
+    .flex-container .radio-group div{
+        flex-basis: 33%;
+        flex-shrink: 0;
+        padding-left: 0.5rem;
     }
 
 }
@@ -92,5 +121,7 @@ form a:hover{
     form{
         flex-shrink: 0;
         flex-basis: 650px;
+        margin-left: 1rem;
     }
+    
 }

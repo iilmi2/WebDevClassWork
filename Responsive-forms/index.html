@@ -17,6 +17,34 @@
         <form action="#" method="get">
             <p>Try it free for 7 days starting at $25 a month</p>
             <div class="flex-container">
+                <div class="radio-group">
+                    <p>Field of Interest</p>
+                    <div>
+                        <label for="PHP">PHP</label>
+                        <input type="radio" id="PHP" name="group" value="PHP">
+                    </div>
+                    <div>
+                        <label for="C#">C#</label>
+                        <input type="radio" id="C#" name="group" value="C#">
+                    </div>
+                    <div>
+                        <label for="HTML">HTML</label>
+                        <input type="radio" id="HTML" name="group" value="HTML">
+                    </div>
+                    <div>
+                        <label for="Javascript">Javascript</label>
+                        <input type="radio" id="Javascript" name="group" value="Javascript">
+                    </div>
+                    <div>
+                        <label for="Styling">Styling a Website</label>
+                        <input type="radio" id="Styling" name="group" value="Styling">
+                    </div>
+                    <div>
+                        <label for="UX/UI">UX/UI</label>
+                        <input type="radio" id="UX/UI" name="group" value="UX">
+                    </div>
+                    
+                </div>
                 <div>
                     <label for="first_name">First Name</label>
                     <input type="text" id="first_name" name="first_name">
@@ -26,15 +54,29 @@
                     <input type="text" id="last_name" name="last_name">
                 </div>
                 <div>
+                    <label for="province">Province</label>
+                    <select name="province" id="province">
+                        <option value="">Select a Province</option>
+                        <option value="Alberta">Alberta</option>
+                        <option value="Ontario">Ontario</option>
+                        <option value="Newfoundland">Newfoundland</option>
+                    </select>
+                </div>
+                <div>
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" placeholder="ex: bob@robert.ca">
                 </div>
                 <div>
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password" placeholder="minimum of 4">
+                </div>
+                <div>
+                    <label for="confirmPass">Confirm Password</label>
+                    <input type="password" id="confirmPass" name="confirmPass" placeholder="minimum of 4">
                 </div>
                 <input type="submit" name="submit" value="Claim your free Trial &#9656;">
-                <p>By signing up you are agreeing to our <a href="#">Terms of Service</a></p>
+                <p><label for="check">By signing up you are agreeing to our <a href="#">Terms of Service</a> </label><input type="checkbox" name="check" id="check" value=""></p>
+
             </div>
         </form>
     </section>
